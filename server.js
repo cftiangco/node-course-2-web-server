@@ -58,6 +58,12 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/privacy', (req, res) => {
+    res.render('privacy.hbs', {
+        pageTitle : 'Privacy Page'
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`Server is up on port ${PORT}`);
 });
